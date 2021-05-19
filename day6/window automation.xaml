@@ -1,0 +1,184 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="window_automation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="836,1619.2" sap2010:WorkflowViewState.IdRef="window_automation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="400,1554.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="Student Detail" DisplayName="Start Process" FileName="D:\RPA TRAINING\WindowsForms\StudentsDetails.exe" sap:VirtualizedContainerService.HintSize="358.4,88" sap2010:WorkflowViewState.IdRef="StartProcess_2" />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="1822KC05">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="90ed9243-7352-4e00-8f1d-ce81ec0b1e0d" InformativeScreenshot="ea70abaedebe9f67f3e073863c3d448d" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='txtRollNo' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="Bharani">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a018a054-a97a-40fd-8641-1836d286ac0c" InformativeScreenshot="ffb82ea4bb9f05ee4f62ab5a2a5231a9" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='txtFirstName' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="priya">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc4bd0c2-c8db-4661-9137-e9e869e7fc32" InformativeScreenshot="deed0721dc8e1337076191f86c3cd103" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='txtLastName' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'combo box  Last Name *'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="IT">
+      <ui:SelectItem.Items>
+        <scg:List x:TypeArguments="x:String" Capacity="8">
+          <x:String>CSE</x:String>
+          <x:String>IT</x:String>
+          <x:String>ECE</x:String>
+          <x:String>MECHANICAL</x:String>
+          <x:String>CIVIL</x:String>
+        </scg:List>
+      </ui:SelectItem.Items>
+      <ui:SelectItem.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b6cfa074-c58c-4332-b95e-e2262d21e6b8" InformativeScreenshot="74ec0a2f655ac0294dca3e7bcf2ab891" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='cmbDept' /&gt;&lt;ctrl name='Last Name *' role='combo box' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SelectItem.Target>
+    </ui:SelectItem>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="1532647891011123">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="43021fe7-16b1-4b0f-bc15-10f90e0b7d41" InformativeScreenshot="ac8b8c432d5fc3fe5408a17e39cde6ca" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='txtAadharNo' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'WindowsForms10.EDIT.app...'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="895612370">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c6262735-b3dc-4bb1-ba99-08405a4f45a2" InformativeScreenshot="d4249fdb86112dcfcd68f5c2f50e168b" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='txtMobileNo' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'list item  Java'" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="Java">
+      <ui:SelectItem.Items>
+        <scg:List x:TypeArguments="x:String" Capacity="8">
+          <x:String>C</x:String>
+          <x:String>C++</x:String>
+          <x:String>Java</x:String>
+          <x:String>Python</x:String>
+          <x:String>UiPath</x:String>
+        </scg:List>
+      </ui:SelectItem.Items>
+      <ui:SelectItem.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b829d132-d6f9-446a-aa34-ba62f129cd03" InformativeScreenshot="cc25ed6bf7fc8ff73d68fa11667aa0c2" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='lstSkills' /&gt;&lt;ctrl name='Gender *' role='list' /&gt;&lt;ctrl name='Java' role='list item' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:SelectItem.Target>
+    </ui:SelectItem>
+    <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  Submit'" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e09050b-131b-41ac-89f3-fb79b4af4c8d" InformativeScreenshot="1740af0f1f0b4c968daa3905c5499a48" Selector="&lt;wnd app='studentsdetails.exe' ctrlname='StudentDetails' /&gt;&lt;wnd ctrlname='btnSubmit' /&gt;&lt;ctrl name='Submit' role='push button' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+  </Sequence>
+</Activity>
